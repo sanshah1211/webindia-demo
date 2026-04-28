@@ -1,0 +1,8 @@
+name: OpenStack Workflow
+on: push
+jobs:
+  openstack:
+    runs-on: deployment-small
+    steps:
+      - name: List Contents
+        run: ls -l
