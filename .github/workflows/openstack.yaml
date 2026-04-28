@@ -13,7 +13,12 @@ jobs:
           source venv/bin/activate
           pip install openstacksdk
 
+      - name: Connect to OpenStack Cloud and List servers
+        run: |
+           cd python-openstack && source admin-openrc.sh
+           python connect.py
 
-          
+
+
 
       
