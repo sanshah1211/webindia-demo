@@ -4,5 +4,7 @@ jobs:
   openstack:
     runs-on: small
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: List Contents
         run: ls -l
