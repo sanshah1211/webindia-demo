@@ -7,4 +7,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: List Contents
-        run: ls -l
+        run: | 
+          ls -l
+          pwd
