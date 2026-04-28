@@ -50,7 +50,7 @@ jobs:
       - name: Read Server List Data
         run: |
           ls -l 
-          cat server-list-text-file
+          cat server-list.txt
 
 
 
