@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.1
         with:
           name: server-list-text-file
-          path: server-list.txt
+          path: python-openstack/server-list.txt
     
   openstack-resource-creation:
     needs: openstack-connect-test
@@ -44,7 +44,7 @@ jobs:
       - name: Read Server List Data
         run: |
           ls -l 
-          cat server-list.txt
+          cat python-openstack/server-list.txt
 
 
 
