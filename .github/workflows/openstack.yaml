@@ -1,7 +1,7 @@
 name: OpenStack Workflow
 on: push
 jobs:
-  openstack:
+  openstack-connect-test: 
     runs-on: small
     steps:
       - name: Checkout
@@ -17,6 +17,14 @@ jobs:
         run: |
            cd python-openstack && source admin-openrc.sh
            python connect.py
+    
+  openstack-resource-creation:
+    needs: openstack-connect-test
+    runs-on: small
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
 
 
 
