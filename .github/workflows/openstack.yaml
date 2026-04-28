@@ -30,7 +30,7 @@ jobs:
            python connect.py > server-list.txt
       
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: server-list-text-file
           path: server-list.txt
@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8.0.1
         with:
           name: server-list-text-file
 
