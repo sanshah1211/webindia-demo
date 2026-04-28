@@ -32,7 +32,7 @@ jobs:
           name: server-list-text-file
           path: python-openstack/server-list.txt
     
-  openstack-resource-creation:
+  openstack-connect-verification:
     needs: openstack-connect-test
     runs-on: small
     steps:
